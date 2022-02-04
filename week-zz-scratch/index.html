@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Scratch</title>
+    <title>CSS Testing</title>
+	<style>
+		h1 {
+			border-bottom: double;
+			display: inline;
+			font-size: 200%;
+		}
+		
+		#dan {
+			text-indent: 25px;
+			font-size: 150%;
+		}
+		#master {
+			text-indent: 50px;
+			font-size: 150%;
+		}
+		#outcome {
+			text-indent: 75px;
+			font-size: 150%;
+		}
+		#ago {
+			border-bottom: 3px dotted purple;
+			display: inline;
+			text-indent: 85px;
+			font-size: 175%;
+		}
+		
+		.bold {
+			background-color: white;
+			display: inline;
+			font-size: 150%;
+			text-shadow: 2px 2px;
+		}
+		.min {
+			font-family: "Comic Sans MS", "Comic Sans", cursive;
+			border-bottom: 4px double purple;
+			display: inline;
+		}
+	</style>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
   </head>
   <body onload="load();">
-    <p>Hello world!</p>
+    <h1><i><b class="bold">Do</b></i> it?</h1>
+	<p id="dan">Dan, I'm not a republic <b class="bold">serial</b> villain.</p> 
+	<p id="master">Do you seriously think I'd explain my <b class="bold">master-stroke</b></p>
+	<p id="outcome">if there remained the slightest chance of you affecting its outcome?</p>
+	<h2 id="ago">I did it <i class="min">thirty-five</i> minutes ago.</h2>
   </body>
 </html>

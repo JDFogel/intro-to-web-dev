@@ -1,3 +1,8 @@
 p {
   font-size: large;
 }
+
+body {
+	background-image: url("https://i0.wp.com/interestingliterature.com/wp-content/uploads/2016/03/ozymandias-painting.jpg?ssl=1");
+	background-color: #cccccc;
+}
