@@ -1,12 +1,63 @@
 nav {
-  border: thin solid black;
+	display: flex;
+	justify-content: space-around;
+}
+
+.header {
+	background-color: teal;
+	text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer {
+	background-color: #797ef6;
+}
+
+.middle {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 15px;
+  background-color: #d7e5f0;
+}
+
+.fries {
+	display: flex;
+	flex-direction: column;
+  flex-grow: 2;
+}
+
+.not {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.fried {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 2;
 }
 
 div {
   border: thin solid black;
-  margin: 25px 0;
+  padding: 10px;
 }
 
-footer {
-  border: thin solid black;
+
+body {
+	background-color: darkred;
 }
+
+
+
+@media screen and (max-width: 700px) {
+  nav {
+    background-color: lime;
+	display: flex;
+	justify-content: center;
+	
+  }
