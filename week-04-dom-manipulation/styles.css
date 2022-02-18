@@ -1,8 +1,40 @@
-#output {
+#output1 {
+  /* Output starts invisible */
+  display: none;
+}
+
+#output2 {
+  /* Output starts invisible */
+  display: none;
+}
+
+#output3 {
+  /* Output starts invisible */
+  display: none;
+}
+
+#output4 {
+  /* Output starts invisible */
+  display: none;
+}
+
+#output5 {
   /* Output starts invisible */
   display: none;
 }
 
 #adjective-one-output {
+  font-weight: bold;
+}
+#verb-one-output {
+  font-weight: bold;
+}
+#animal-one-output {
+  font-weight: bold;
+}
+#adjective-two-output {
+  font-weight: bold;
+}
+#place-one-output {
   font-weight: bold;
 }

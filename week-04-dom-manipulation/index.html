@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home</title>
+    <title>Week 4 Project</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
   </head>
   <body>
+  
     <div id="inputs">
       <div>Give me an adjective: <input id="adjective-one-input" /></div>
       <button onclick="fillOutputs();">Done</button>
     </div>
-    <div id="output">
-      The <span id="adjective-one-output"></span> fox jumped over the lazy dog.
+    <div id="output1">
+      It was a <span id="adjective-one-output"></span> summer day.
     </div>
+	
+	<div id="inputs">
+      <div>Give me a verb ending in -ing: <input id="verb-one-input"></div>
+      <button onclick="fillVerbOutput();">Done</button>
+    </div>
+    <div id="output2">
+      Lucy was <span id="verb-one-output"></span> through the meadow without a care in the world.
+    </div>
+	
+	<div id="inputs">
+      <div>Give me an animal: <input id="animal-one-input" /></div>
+      <button onclick="fillAnimalOutput();">Done</button>
+    </div>
+    <div id="output3">
+      When suddenly, a <span id="animal-one-output"></span> jumped out from behind a tree!
+    </div>
+	
+	<div id="inputs">
+      <div>Give me another adjective: <input id="adjective-two-input" /></div>
+      <button onclick="fillAdjectiveTwoOutput();">Done</button>
+    </div>
+    <div id="output4">
+      The <span id="adjective-two-output"></span> animal seemed hurt. 'Oh no!' said Lucy. 'I have to help!'
+    </div>
+	
+	<div id="inputs">
+      <div>Give me a place: <input id="place-one-input" /></div>
+      <button onclick="fillPlaceOutput();">Done</button>
+    </div>
+    <div id="output5">
+      Lucy took the poor creature to <span id="place-one-output"></span> and nursed it back to health.
+    </div>
+	
   </body>
 </html>
