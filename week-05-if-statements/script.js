@@ -6,14 +6,16 @@ function submitAnswerOne() {
   // Get the text from answer one's input element
   const answerOne = answerOneInput.value;
 
-  if(answerOne == 'cat') {
-    alert("That's right!");
+  if(answerOne == 'Potato Roll') {
+    alert("Good enough!");
     hide('question-one');
     show('question-two');
-  } else if(answerOne == 'dog') {
-    alert('Close, but my favorite animal runs away from dogs.');
+  } else if(answerOne == 'Kaiser Roll') {
+    alert('Perfect choice!');
+	hide('question-one');
+    show('question-two');
   } else {
-    alert('Wrong! Hint: My favorite animal meows.')
+    alert('Wrong, sorry! Maybe try something related to the leader of Germany before World War I?')
   }
 }
 
@@ -25,16 +27,52 @@ function submitAnswerTwo() {
   // Get the number from answer two's input element
   const answerTwo = answerTwoInput.value;
 
-  if(answerTwo == 42) {
-    alert("That's right!");
+  if(answerTwo == 'Chicken') {
+    alert("That's spot on!");
     hide('question-two');
-    show('done');
-  } else if(answerTwo < 42) {
-    alert('The answer is higher.');
+    show('question-three');
+  } else if(answerTwo == 'Beef') {
+    alert('Hmm. Try a smaller animal.');
+  } else if(answerTwo == 'Pork') {
+    alert('A good choice, but not quite the best. Maybe try an even smaller animal?')
   } else {
-    alert('The answer is lower.')
+  	alert("That's an interesting choice, but I'm thinking of something that goes 'cluck.'")
   }
 }
+
+function submitAnswerThree() {
+	
+	const answerThreeInput = document.getElementById('answer-three-input');
+	const answerThree = answerThreeInput.value
+		
+	if(answerThree == 'Pepperjack') {
+		alert('Amazing option!');
+		hide('question-three');
+		show('question-four');
+	} else {
+		alert('Sorry, not quite. Maybe try something with a little more spice?')
+	}
+}
+
+function submitAnswerFour() {
+	
+	const answerFourInput = document.getElementById('answer-four-input');
+	const answerFour = answerFourInput.value
+		
+	if(answerFour == 'Chipotle Mayo') {
+		alert("That's what I was thinking!");
+		hide('question-four');
+		show('done');
+	} else if(answerFour == 'Mayo') {
+		alert('Uh, no. But close! Maybe a mayo-based sauce with a bit of a kick?')
+	} else if(answerFour == 'Ketchup' || 'Mustard') {
+		alert('Solid option, but try something a little more interesting!')
+	} else {
+		alert('Sorry, not quite. Maybe try something with a little more spice?')
+	}
+	
+}
+
 
 // Helper function that takes an ID and shows the element with that ID.
 function show(id) {
