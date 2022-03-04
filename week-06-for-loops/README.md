@@ -14,12 +14,13 @@ information about your speech. In addition to the existing example section that
 shows words with more than 5 characters, your page should include these
 sections:
 
-- Words with less than 4 characters
+
+- Words with less than 4 characters - CHECK
 - Words that start with the same letter as your name (if none, feel free to
-  choose a different letter)
-- The longest word, or the shortest word
-- Every 3rd word
-- Words that aren't the 10 most common words
+  choose a different letter) - CHECK
+- The longest word, or the shortest word - CHECK
+- Every 3rd word - CHECK
+- Words that aren't the 10 most common words - CHECK
 
 There are ways to do some of this without for loops, but the goal of this
 project is to practice using for loops. So when you're done, your code should
