@@ -1,12 +1,13 @@
 function setup() {
   createCanvas(400, 400);
   strokeWeight(4);
+  isGrub = true;
 }
 
 let isHonk = false;
 
 
-//Momothin the Hydrophobe
+//Momothim the Hydrophobe
 function draw() {
 
   //HONK
@@ -28,9 +29,12 @@ function draw() {
     textAlign(LEFT, TOP);
     textSize(75);
 
-    text("HONK!", width / 2 + random(-7, 7), height / 2 + random(-7, 7));
-
-  } else {
+    let rawString = "HONK!"
+    rawString.fontcolor("Green")
+    text(rawString, width / 2 + random(-7, 7), height / 2 + random(-7, 7));
+    
+isGrub = true;
+} else if(isGrub) {
 
     background(0, 0, 225);
 
@@ -51,8 +55,10 @@ function draw() {
     let thought = random(foods);
     textSize(30);
     text(thought, 50, 50)
+ isGrub = false;
+} else{
 
-  }
+}
 }
 
 //HONK State
