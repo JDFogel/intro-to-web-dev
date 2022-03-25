@@ -1,3 +1,39 @@
 td {
   border: thin solid black;
 }
+
+body {
+	background-image: url("star wars back.jpg")
+}
+
+h1 {
+	font-size: 60px;
+	-webkit-text-stroke: 2px black;
+	-webkit-text-fill-color: yellow;
+	display: table;
+    margin: 0px auto 0px auto;
+    background-color:black
+}
+
+p {
+	font-size: 40px;
+	-webkit-text-fill-color: yellow;
+	display: table;
+    margin: 0px auto 0px auto;
+    background-color:black
+}
+
+div {
+	font-size: 30px;
+	-webkit-text-fill-color: yellow;
+	display: table;
+    margin: 0px auto 0px auto;
+    background-color:black
+}
+
+.button {
+	height: 60px;
+	width: 120px;
+	font-size: 50px;
+	-webkit-text-stroke: 2px black;
+}

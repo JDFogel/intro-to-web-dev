@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Task List</title>
+    <title>Movie List</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
   </head>
   <body onload="loadContent();">
-    <h1>Task List</h1>
+    <h1>Star Wars Data Table</h1>
     <div id="table-container"></div>
     <hr>
-    <p>Shortest task: <span id="shortest-task"></span></p>
+    <p>Highest Earning (Not Adjusted for Inflation): <span id="best-earn"></span></p>
+    <p>Average Runtime: <span id="average-runtime"></span> Minutes</p>
     <hr>
     <div>
-      <h1>New Task</h1>
-      Label: <input type="text" id="label-input"/>
+      <h1>Compare a Movie to Star Wars!</h1>
+      Title: <input type="text" id="label-input"/>
       <br><br>
-      Time: <input type="number" id="time-input" />
+      Year: <input type="number" id="year-input"/>
       <br><br>
-      <button onclick="addNewTask();">Add</button>
+      Runtime: <input type="number" id="time-input"/>
+      <br><br>
+      Gross Earnings (in Millions): <input type="number" id="money-input"/>
+      <br><br>
+      <button onclick="addNewTask();", class="button">Add</button>
     </div>
   </body>
 </html>
