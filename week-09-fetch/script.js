@@ -23,7 +23,7 @@ async function loadContent() {
 
   	loadImages(article.images);
     loadLanguages(article.langlinks);
-	loadCategory(article.category)
+	loadCategories(article.categories)
 }
 
 
@@ -58,22 +58,22 @@ async function loadImages(images) {
 }
 
 //Categories???
-function loadCategories(category) {
+function loadCategories(categories) {
 
-    const categoryElement = document.getElementById('category');
+    const categoriesElement = document.getElementById('category');
 
-    for (const cat of category) {
+    for (const cat of categories) {
 
         const catElement = document.createElement('li');
 
-        catElement.href = 'https://en.wikipedia.org/wiki/' + category;
-        catElement.innerText = cat.title;
+        catElement.href = 'https://en.wikipedia.org/wiki/' + categories;
+        catElement.innerText = cat.category;
 
         const liElement = document.createElement('li');
 
-        liElement.appendChild(linksElement);
+        liElement.appendChild(catElement);
 
-        linksElement.appendChild(liElement);
+        categoriesElement.appendChild(liElement);
     }
 }
 

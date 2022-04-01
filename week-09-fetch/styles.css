@@ -1,8 +1,50 @@
+body {background-color: coral;}
+
+
 #images {
-  width: 500px;
-  border: thin solid black;
+  width: 800px;
+  border: thick solid black;
 }
 
 #images img {
   width: 100px;
+}
+
+#links {
+    border: thick solid darkgreen;
+    color: green;
+}
+
+#langLinks {
+    border: thick solid blue;
+    color: green;
+}
+
+#category {
+    border: thick solid red;
+    color: green;
+}
+
+
+
+.typewriter h1 {
+  text-align: center;
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 25% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
