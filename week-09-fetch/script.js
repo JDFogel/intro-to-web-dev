@@ -1,6 +1,6 @@
 // Loads content for a Wikipedia article and displays it in the page.
 async function loadContent() {
-  const pageId = 'Cat';
+  const pageId = 'Mantis_shrimp';
   const response = await fetch(
     'https://en.wikipedia.org/w/api.php?' +
     'action=parse&formatversion=2&format=json&origin=*&page='
@@ -21,8 +21,28 @@ async function loadContent() {
     linksElement.appendChild(liElement);
   }
 
-  loadImages(article.images);
+  	loadImages(article.images);
+    loadLanguages(article.langlinks);
+	loadSections(article.sections)
 }
+
+ //Languages??
+ function loadLangLinks(langLinks) {
+   let langLinks = article.parse.langlinks;
+
+   let langElement = document.getElementById('langLinks');
+
+   for (let link of langLinks) {
+
+        let liElement = document.createElement('li');
+        let aElement = document.createElement('a');
+        aElement.innerText = link.title;
+        aElement.href = link.url;
+
+        liElement.appendChild(aElement);
+        langElement.appendChild(liElement);
+    }
+ }
 
 // Takes an array of image file names, uses the Wikipedia API to get the full
 // URL for each one, and then displays them in the page.
@@ -51,4 +71,22 @@ async function loadImages(images) {
       imageElement.src = imageUrl;
       imagesContainer.appendChild(imageElement);
   }
+}
+function loadSections(sections) {
+
+    const sectionsElement = document.getElementById('sections');
+
+    for (const section of sections) {
+
+        const sectionElement = document.createElement('p');
+
+        sectionElement.href = 'https://en.wikipedia.org/wiki/' + sections;
+        sectionElement.innerText = section.title;
+
+        const liElement = document.createElement('p');
+
+        liElement.appendChild(linksElement);
+
+        linksElement.appendChild(liElement);
+    }
 }
