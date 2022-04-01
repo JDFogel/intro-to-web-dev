@@ -23,26 +23,10 @@ async function loadContent() {
 
   	loadImages(article.images);
     loadLanguages(article.langlinks);
-	loadSections(article.sections)
+	loadCategory(article.category)
 }
 
- //Languages??
- function loadLangLinks(langLinks) {
-   let langLinks = article.parse.langlinks;
 
-   let langElement = document.getElementById('langLinks');
-
-   for (let link of langLinks) {
-
-        let liElement = document.createElement('li');
-        let aElement = document.createElement('a');
-        aElement.innerText = link.title;
-        aElement.href = link.url;
-
-        liElement.appendChild(aElement);
-        langElement.appendChild(liElement);
-    }
- }
 
 // Takes an array of image file names, uses the Wikipedia API to get the full
 // URL for each one, and then displays them in the page.
@@ -72,21 +56,40 @@ async function loadImages(images) {
       imagesContainer.appendChild(imageElement);
   }
 }
-function loadSections(sections) {
 
-    const sectionsElement = document.getElementById('sections');
+//Categories???
+function loadCategories(category) {
 
-    for (const section of sections) {
+    const categoryElement = document.getElementById('category');
 
-        const sectionElement = document.createElement('p');
+    for (const cat of category) {
 
-        sectionElement.href = 'https://en.wikipedia.org/wiki/' + sections;
-        sectionElement.innerText = section.title;
+        const catElement = document.createElement('li');
 
-        const liElement = document.createElement('p');
+        catElement.href = 'https://en.wikipedia.org/wiki/' + category;
+        catElement.innerText = cat.title;
+
+        const liElement = document.createElement('li');
 
         liElement.appendChild(linksElement);
 
         linksElement.appendChild(liElement);
     }
 }
+
+ //Languages??
+ function loadLanguages(langLinks) {
+
+   let langElement = document.getElementById('langLinks');
+
+   for (let langlink of langLinks) {
+
+        let liElement = document.createElement('li');
+        let aElement = document.createElement('a');
+        aElement.innerText = langlink.title;
+        aElement.href = langlink.url;
+
+        liElement.appendChild(aElement);
+        langElement.appendChild(liElement);
+    }
+ }
