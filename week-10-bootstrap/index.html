@@ -19,6 +19,10 @@
         background-color: darkred;
     }
 
+    .nav-item {
+        text-color: darkgreen;
+    }
+
   </style>
 
   <div class="container">
@@ -51,7 +55,7 @@
             <div class="col">
         
                <div class="dropdown">
-                  <button aria-label="French Fries" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     French Fries
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -67,7 +71,7 @@
             <div class="col">
 
 		        <div class="dropdown">
-                  <button aria-label="Not Fried Goods" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     Not-Fried Goods
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -82,7 +86,7 @@
             <div class="col">
 
                 <div class="dropdown">
-                  <button aria-label="Other Fried Goods" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     Other Fried Goods
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -111,11 +115,11 @@
       <img src="oreo.jpg" class="d-block w-100" alt="Deep fried Oreos">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+  <button aria-label="Previous Image" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+  <button aria-label="Next Image" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
