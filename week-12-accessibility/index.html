@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Movie List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body onload="loadContent();">
+    <h1>Star Wars Data Table</h1>
+    <div id="table-container"></div>
+    <hr>
+    <p>Highest Earning (Not Adjusted for Inflation): <span id="best-earn"></span></p>
+    <p>Average Runtime: <span id="average-runtime"></span> Minutes</p>
+    <hr>
+    <div>
+      <h1>Compare a Movie to Star Wars!</h1>
+        <label>
+      Title: <input class="input" type="text" id="label-input"/>
+        </label>
+      <br><br>
+        <label>
+      Year: <input class="input" type="number" id="year-input"/>
+        </label>
+      <br><br>
+        <label>
+      Runtime: <input class="input" type="number" id="time-input"/>
+        </label>
+      <br><br>
+        <label>
+      Gross Earnings (in Millions): <input class="input" type="number" id="money-input"/>
+        </label>
+      <br><br>
+      <button onclick="addNewTask();", class="button">Add</button>
+    </div>
+  </body>
+</html>
