@@ -1,3 +1,9 @@
+body, html {
+
+	height: 100%;
+
+}
+
 div {
   padding: 10px;
 }
@@ -30,4 +36,39 @@ div {
 
 .mail {
   grid-column: 1 / 4;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("sock.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption {
+
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+
+}
+
+.caption span.border {
+
+	background-color: #111;
+	color: #fff;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+
 }
