@@ -1,0 +1,33 @@
+div {
+  padding: 10px;
+}
+
+.leftbar, .rightbar, .middle {
+	text-align: center;
+	font-size: 36px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-template-rows: 1fr auto 1fr;
+  gap: 10px;
+}
+
+.header {
+  grid-column: 1 / 4;
+  text-align: center;
+  font-size: 60px;
+  font-variant: small-caps;
+  color: white;
+  font-style: bold;
+  background-color: gray;
+}
+
+.footer {
+  grid-column: 1 / 4;
+}
+
+.mail {
+  grid-column: 1 / 4;
+}
